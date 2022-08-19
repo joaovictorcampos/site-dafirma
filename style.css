@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face {
+    font-family: 'ethnocentric';
+    src: url(fontes/ethnocentric/ethnocentric\ rg.otf);
+}
+
+:root{
+    --fonte-destaque: 'ethnocentric', cursive;
+    --fonte-titulo: 'Bebas Neue', cursive;
+    --fonte-padrao: 'Poppins', sans-serif;
+
+    --cor0: #D60F0F;
+    --cor1: #54DD92;
+    --cor2: #00D660;
+    --cor3: #00A349;
+    --cor4: #005727;
+    --cor5: black;
+
+
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    height: 100vh;
+    background-image: url(imagens/pattern-luzes.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+
+div#cabeçalho{
+    background-image: url(imagens/Grupo.grande.png);
+    height: 100vh;
+    width: auto;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    position: relative;
+}
+
+header{
+    padding-top: 25px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, #00d66094, rgba(0, 0, 0, 0.623));
+}
+
+header h1{
+    font-family: var(--fonte-destaque);
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
+}
+
+header p{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
+    
+}
+
+nav{
+    padding: 15px 0px 15px 40px;
+    background-color: rgba(0, 0, 0, 0.623);
+    box-shadow: 0px 7px 7px rgba(0, 0, 0, 0.37);
+}
+
+nav a{
+    padding: 1px 15px 1px 15px;
+    text-decoration: none;
+    color: white;
+    font-family: var(--fonte-padrao);
+    font-size: 1.2em;
+    font-weight: bolder;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
+    
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: var(--cor4);
+    background-color: rgba(255, 255, 255, 0.747);
+    text-shadow: none;
+}
+
+section#discord{
+    position: absolute;
+    bottom: 5px;
+    
+}
+
+
+section#discord h1{
+    padding: 2px 0px 3px 20px;
+    margin: 0px 0px 0px 40px;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 185px;
+    border-radius: 2px;
+
+}
+
+section#discord h2{
+    padding: 0px 0px 2px 20px;
+    margin: 5px 0px 5px 40px;
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
+    font-weight: 400;
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 100px;
+    border-radius: 2px;
+}
+
+section#discord p{
+    padding: 10px 20px 10px 20px;
+    margin: 5px 40px 10px 40px;
+    text-indent: 70px;
+    text-align: justify;
+    font-family: var(--fonte-padrao);
+    background-color: rgba(255, 255, 255, 0.685);
+    width: 400px;
+    border-radius: 2px;
+
+}
+
+main{
+    padding: 30px 40px 20px 40px;
+    text-align: justify;
+    background-color: black;
+    max-width: 1000px;
+    margin: auto;
+    box-shadow: 0px 5px 10px rgb(0, 0, 0);
+    margin-bottom: 30px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor1);
+}
+
+main a:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+main h1{
+    margin: 20px 0px 5px 0px;
+    font-family: var(--fonte-titulo);
+    font-size: 2em;
+    font-weight: bold;
+    color: var(--cor4)
+}
+
+main h2{
+    padding: 20px 0px 0px 40px ;
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
+    font-weight: 400;
+    color: var(--cor3);
+
+}
+
+main p{
+    padding: 10px 0px 30px 0px;
+    font-family: var(--fonte-padrao);
+    text-indent: 70px;
+    color: white;
+    
+}
+
+img.pequena{
+    margin: 30px 0px 30px 0px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+img.grande{
+    margin: 30px 0px 30px 0px;
+    display: block;
+    width: 100%;
+    margin: auto;
+
+}
+
+
+
+.membros{
+    background-color: rgb(26, 26, 26);
+    padding: 30px 35px 10px 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    width: 300px;
+    height: 460px;
+    margin: 25px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.7);
+    transition: 0.3s;
+    border: 2px solid black;
+    
+}
+
+.card-header{
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    border-bottom: 2px solid black;
+}
+
+.card-img{
+    min-width: 100%;
+    width: auto;
+    height: 100%;
+}
+
+.card-body{
+    height: 170px;
+    text-align: center;
+    font-family: var(--fonte-padrao);
+}
+
+.card-nome{
+    font-size: 2em;
+    margin: 10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.card-nickname{
+    font-size: 1.5em;
+    margin: -10px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+}
+
+.card-info{
+    font-size: 1;
+    margin: 17px 10px 10px 10px;
+    padding: 0px 0px 0px 0px;
+    text-align: left;
+}
+
+.card-footer{
+    margin: 40px 0px 0px 0px;
+    text-align: center;
+    background-color: var(--cor4);
+    border-top: 2px solid black;
+}
+
+.card-footer:hover{
+    background-color: var(--cor3);
+}
+
+.card-footer a{
+    color: white;
+    display: block;
+    text-decoration: none;
+    font-family: var(--fonte-padrao);
+    padding: 8px;
+    font-weight: 600;
+}
+
+
+.card:hover{
+    transform: scale3d(1.1, 1.1, 1);
+}
+
+table#trofeuspsn{
+   
+    margin: auto;
+    border-radius: 5px;
+    background-color: white;
+    border-collapse: collapse;
+}
+
+caption{
+    background-color: gray;
+    font-size: 1.5em;
+    font-weight: bold;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+thead{
+    background-color: gray;
+}
+
+tbody{
+    background-color: lightgray;
+}
+
+td , th{
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    
+}
+
+td a{
+    color: black;
+    text-decoration: none;
+}
+
+td a:hover{
+    color: var(--cor4);
+    text-decoration: underline;
+}
+
+th.titulo-table{
+    text-align: center;
+    background-color: var(--cor4);
+}
