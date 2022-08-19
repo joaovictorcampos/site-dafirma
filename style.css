@@ -136,9 +136,9 @@ section#discord p{
     text-align: justify;
     font-family: var(--fonte-padrao);
     background-color: rgba(255, 255, 255, 0.685);
-    width: 400px;
+    max-width: 400px;
+    min-width: 300px;
     border-radius: 2px;
-
 }
 
 main{
@@ -152,50 +152,53 @@ main{
     border-radius: 0px 0px 10px 10px;
 }
 
-main a{
-    text-decoration: none;
-    color: var(--cor1);
+section.conteudo{
+
 }
 
-main a:hover{
+section.conteudo h1{
+    font-family: var(--fonte-titulo);
+    color: var(--cor3);
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 2.2em;
+}
+
+section.conteudo h2{
+    font-family: var(--fonte-titulo);
+    color: var(--cor4);
+    text-indent: 20px;
+    margin: 0px 0px 10px 0px;
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+section.conteudo p{
+    font-family: var(--fonte-padrao);
+    color: white;
+    text-indent: 40px;
+    margin: 0px 0px 40px 0px;
+    font-size: 1em;
+}
+
+section.conteudo a{
+    text-decoration: none;
+}
+
+section.conteudo a:hover{
     text-decoration: underline;
     color: white;
 }
 
-main h1{
-    margin: 20px 0px 5px 0px;
-    font-family: var(--fonte-titulo);
-    font-size: 2em;
-    font-weight: bold;
-    color: var(--cor4)
-}
-
-main h2{
-    padding: 20px 0px 0px 40px ;
-    font-family: var(--fonte-titulo);
-    font-size: 1.8em;
-    font-weight: 400;
-    color: var(--cor3);
-
-}
-
-main p{
-    padding: 10px 0px 30px 0px;
-    font-family: var(--fonte-padrao);
-    text-indent: 70px;
-    color: white;
-    
-}
-
 img.pequena{
-    margin: 30px 0px 30px 0px;
+    padding:  0px 0px 40px 0px;
     width: 100%;
     display: block;
     margin: auto;
 }
 
 img.grande{
-    margin: 30px 0px 30px 0px;
+    padding: 0px 0px 40px 0px;
     display: block;
     width: 100%;
     margin: auto;
@@ -206,7 +209,7 @@ img.grande{
 
 .membros{
     background-color: rgb(26, 26, 26);
-    padding: 30px 35px 10px 10px;
+    min-height: 100vh;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -250,29 +253,37 @@ img.grande{
     height: 170px;
     text-align: center;
     font-family: var(--fonte-padrao);
+    padding: 15px;
 }
 
 .card-nome{
+    font-family: var(--fonte-titulo);
     font-size: 2em;
-    margin: 10px 0px 0px 0px;
+    margin: 0px 0px;
     padding: 0px 0px 0px 0px;
+    color: var(--cor4);
 }
 
 .card-nickname{
+    font-family: var(--fonte-titulo);
     font-size: 1.5em;
-    margin: -10px 0px 0px 0px;
-    padding: 0px 0px 0px 0px;
+    margin: 0px 0px;
+    padding: 0px 0px 20px 0px;
+    color: var(--cor4);
 }
 
 .card-info{
+    font-family: var(--fonte-padrao);
     font-size: 1;
-    margin: 17px 10px 10px 10px;
-    padding: 0px 0px 0px 0px;
+    width: 250px;
+    margin: 0 auto;
+    padding: 0px 0px 5px 0px;
     text-align: left;
+    font-size: 1.05em;
 }
 
 .card-footer{
-    margin: 40px 0px 0px 0px;
+    margin: 10px 0px 0px 0px;
     text-align: center;
     background-color: var(--cor4);
     border-top: 2px solid black;
@@ -287,7 +298,7 @@ img.grande{
     display: block;
     text-decoration: none;
     font-family: var(--fonte-padrao);
-    padding: 8px;
+    padding: 16px;
     font-weight: 600;
 }
 
