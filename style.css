@@ -398,6 +398,10 @@ th.titulo-table{
     background-color: var(--cor4);
 }
 
+.tabelas{
+    overflow-x: auto;
+}
+
 @media (max-width: 400px){
     /*seção HEADER*/
     
