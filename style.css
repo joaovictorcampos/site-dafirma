@@ -270,6 +270,7 @@ p.conteudo{
     text-align: center;
     font-family: var(--fonte-padrao);
     padding: 15px 0px 15px 0px;
+    
 }
 
 .card-nome{
@@ -293,7 +294,10 @@ p.conteudo{
     padding: 0px 0px 10px 15px;
     font-size: 1em; 
     text-align: left;
+    
 }
+
+
 
 strong.card-info{
     color: var(--cor3);
@@ -391,7 +395,7 @@ th.titulo-table{
             padding-bottom: 100px;
             padding-left: 50px;
             text-align: justify;
-            background-image: linear-gradient(to bottom, #00d66094, rgba(0, 0, 0, 0.623));
+            background-image: linear-gradient(to bottom, var(--cor3), rgba(0, 0, 0, 0.623));
             
         }
         
@@ -416,6 +420,7 @@ th.titulo-table{
         section#discord{
             position: absolute;
             bottom: 5px;
+            width: 300px;
         }
     
         section#discord h1{
@@ -455,7 +460,7 @@ th.titulo-table{
     
     /*seção dos CARDS*/
     
-        section#cards p{
+        p.conteudo{
             font-family: var(--fonte-padrao);
             color: white;
             text-indent: 40px;
@@ -473,7 +478,7 @@ th.titulo-table{
         }
     
         .card{
-            width: 300px;
+            width: 290px;
             height: 460px;
             margin: 25px -13px 25px -13px;
             background-color: #fff;
@@ -509,6 +514,12 @@ th.titulo-table{
             padding: 0px 0px 10px 0px;
             text-align: left;
             
+        }
+
+        /*Seção das tabelas*/
+
+        .tabelas{
+            overflow-x: auto;
         }
     }
     
