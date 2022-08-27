@@ -20,6 +20,8 @@
     --cor3: #fe1250;
     --cor4: #7a04ec;
     --cor5: #120557;
+    --corsubtitulo:#740623;
+    
 
 
 }
@@ -166,7 +168,7 @@ section.conteudo h1{
 
 section.conteudo h2{
     font-family: var(--fonte-titulo);
-    color: var(--cor4);
+    color: var(--corsubtitulo);
     text-indent: 20px;
     margin: 0px 0px 10px 0px;
     font-weight: bold;
@@ -230,6 +232,7 @@ p.conteudo{
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0px 0px 40px 0px;
 }
 
 .container{
@@ -291,7 +294,7 @@ p.conteudo{
 
 .card-info {
     font-family: var(--fonte-padrao);
-    padding: 0px 0px 10px 15px;
+    padding: 0px 0px 10px 10px;
     font-size: 1em; 
     text-align: left;
     
@@ -300,7 +303,7 @@ p.conteudo{
 
 
 strong.card-info{
-    color: var(--cor3);
+    color: var(--cor4);
 }
 
 .card-footer{
@@ -328,33 +331,53 @@ strong.card-info{
     transform: scale3d(1.1, 1.1, 1);
 }
 
+section#rank > h1{
+    margin: 0px 0px 20px 0px;
+}
+
 
 table#trofeuspsn{
    
     margin: auto;
-    border-radius: 5px;
-    background-color: white;
+    border-radius: 10px;
+    background-color: #382d6b;
     border-collapse: collapse;
+    
 }
 
 caption{
-    background-color: gray;
+    background-color: var(--cor5);
     font-size: 1.5em;
     font-weight: bold;
-    border: 1px solid black;
+    border: 1px solid var(--cor3);
     padding: 10px;
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
 }
 
 thead{
-    background-color: gray;
+    background-color: var(--cor5);
+    color: white;
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    font-weight: 300;
 }
 
 tbody{
-    background-color: lightgray;
+    background-color: #786cb1;
+    font-family: var(--fonte-padrao);
+
 }
 
-td , th{
-    border: 1px solid black;
+th{
+    border: 1px solid var(--cor3);
+    padding: 8px;
+    text-align: center;
+}
+
+td {
+    border: 1px solid var(--cor3);
     padding: 8px;
     text-align: left;
     
@@ -366,7 +389,7 @@ td a{
 }
 
 td a:hover{
-    color: var(--cor4);
+    color: var(--cor3);
     text-decoration: underline;
 }
 
@@ -475,6 +498,7 @@ th.titulo-table{
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 40px;
         }
     
         .card{
@@ -495,7 +519,7 @@ th.titulo-table{
             font-size: 1.8em;
             margin: 0px 0px;
             padding: 0px 0px 0px 0px;
-            color: var(--cor4);
+            color: var(--cor5);
         }
         
         .card-nickname{
@@ -517,6 +541,11 @@ th.titulo-table{
         }
 
         /*Seção das tabelas*/
+
+        section#rank > h1{
+            margin: 0px 0px 20px 0px;
+            
+        }
 
         .tabelas{
             overflow-x: auto;
