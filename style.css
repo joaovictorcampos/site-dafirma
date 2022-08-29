@@ -374,6 +374,35 @@ th{
     border: 1px solid var(--cor3);
     padding: 8px;
     text-align: center;
+    
+}
+
+th#bronze{
+    background-image: linear-gradient(to right, #df4600, #611f00);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+th#prata{
+    background-image: linear-gradient(to right, rgb(214, 214, 214), #555555);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+th#ouro{
+    background-image: linear-gradient(to right, #8a5700, #ffbc02);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+th#platina{
+    background-image: linear-gradient(to right, #A69E9F, #005B80);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 td {
