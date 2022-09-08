@@ -6,7 +6,7 @@
 
 @font-face {
     font-family: 'ethnocentric';
-    src: url(fontes/ethnocentric/ethnocentric\ rg.otf);
+    src: url(../fontes/ethnocentric/ethnocentric\ rg.otf);
 }
 
 :root{
@@ -33,7 +33,7 @@
 
 html, body{
     height: 100vh;
-    background-image: url(imagens/pattern-luzes.jpg);
+    background-image: url(../imagens/pattern-luzes.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -44,7 +44,7 @@ html, body{
 
 
 div#cabeçalho{
-    background-image: url(imagens/Grupo.grande.png);
+    background-image: url(../imagens/Grupo.grande.png);
     height: 100vh;
     width: auto;
     background-repeat: no-repeat;
@@ -63,9 +63,24 @@ header{
     background-image: linear-gradient(to bottom, var(--cor3), rgba(0, 0, 0, 0.623));
 }
 
+header#pages{
+    padding-top: 25px;
+    padding-bottom: 100px;
+    padding-left: 50px;
+    text-align: justify;
+    background-image: linear-gradient(to bottom, var(--cor3), rgba(0, 0, 0, 0.623));
+}
+
 header h1{
     font-family: var(--fonte-destaque);
     font-size: 2.5em;
+    color: white;
+    text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
+}
+
+header h2{
+    font-family: var(--fonte-titulo);
+    font-size: 1.8em;
     color: white;
     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
 }
@@ -147,6 +162,16 @@ section#discord p{
     border-radius: 2px;
 }
 
+section#discord a{
+    text-decoration: none;
+}
+
+section#discord a:hover{
+    color: white;
+    text-decoration: underline;
+    text-shadow: 2px 2px 5px black;
+}
+
 main{
     padding: 30px 40px 20px 40px;
     text-align: justify;
@@ -158,7 +183,7 @@ main{
     border-radius: 0px 0px 10px 10px;
 }
 
-section.conteudo h1{
+main h1{
     font-family: var(--fonte-titulo);
     color: var(--cor3);
     margin: 0px 0px 10px 0px;
@@ -166,7 +191,7 @@ section.conteudo h1{
     font-size: 2.2em;
 }
 
-section.conteudo h2{
+main h2{
     font-family: var(--fonte-titulo);
     color: var(--corsubtitulo);
     text-indent: 20px;
@@ -175,7 +200,7 @@ section.conteudo h2{
     font-size: 1.8em;
 }
 
-section.conteudo p{
+main p{
     font-family: var(--fonte-padrao);
     color: white;
     text-indent: 40px;
@@ -183,11 +208,11 @@ section.conteudo p{
     font-size: 1em;
 }
 
-section.conteudo a{
+main a{
     text-decoration: none;
 }
 
-section.conteudo a:hover{
+main a:hover{
     text-decoration: underline;
     color: white;
 }
@@ -297,6 +322,9 @@ p.conteudo{
     padding: 0px 0px 10px 10px;
     font-size: 1em; 
     text-align: left;
+    text-indent: 0px;
+    color: black;
+    margin: 0px;
     
 }
 
@@ -304,6 +332,7 @@ p.conteudo{
 
 strong.card-info{
     color: var(--cor4);
+    margin: 0px;
 }
 
 .card-footer{
@@ -361,7 +390,7 @@ thead{
     color: white;
     font-family: var(--fonte-titulo);
     font-size: 1.5em;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 tbody{
@@ -463,6 +492,13 @@ th.titulo-table{
             margin: 0px 0px 0px -15px;
         }
         
+        header h2{
+            font-family: var(--fonte-titulo);
+            font-size: 1.8em;
+            color: white;
+            text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
+        }
+
         header p{
             font-family: var(--fonte-titulo);
             font-size: 1.5em;
