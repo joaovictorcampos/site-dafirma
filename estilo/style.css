@@ -365,13 +365,13 @@ section#rank > h1{
 }
 
 
-table#trofeuspsn{
+table{
    
     margin: auto;
     border-radius: 10px;
     background-color: #382d6b;
     border-collapse: collapse;
-    
+    margin-bottom: 30px;
 }
 
 caption{
@@ -451,9 +451,8 @@ td a:hover{
     text-decoration: underline;
 }
 
-th.titulo-table{
-    text-align: center;
-    background-color: var(--cor4);
+.num{
+    text-align: right;
 }
 
 .tabelas{
