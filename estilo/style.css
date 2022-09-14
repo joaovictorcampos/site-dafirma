@@ -469,6 +469,46 @@ td a:hover{
     overflow-x: auto;
 }
 
+section#consoles img{
+    display: block;
+    margin: auto;
+    padding-bottom: 40px;
+    max-width: 100%;
+   width: 500px;
+}
+
+section#redesocial{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+iframe#tela{
+    position: relative;
+    max-width: 300px;
+    height: 500px;
+    border-radius: 5px;
+}
+
+section#redes-sociais{
+    text-align: right;
+    margin-left: 360px;
+    margin-bottom: 150px;
+    display: block;
+}
+
+section#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px white;
+    box-sizing: border-box;
+}
+
+section#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.692);
+}
+
 @media (max-width: 400px){
     /*seção HEADER*/
     
@@ -557,6 +597,14 @@ td a:hover{
             background-color: rgba(255, 255, 255, 0.685);
             border-radius: 2px;
         }
+
+    /*Seção body*/
+
+
+        main h3{
+            font-size: 1em;
+            letter-spacing: 2px;
+        }
     
     
     /*seção dos CARDS*/
@@ -628,5 +676,35 @@ td a:hover{
         .tabelas{
             overflow-x: auto;
         }
-    }
+
+        /*Seção iframe*/
+
+        section#redesocial{
+            position: absolute;
+            left: 35%;
+            transform: translate(-35%);
+        }
+        
+        iframe#tela{
+            position: relative;
+            width: 200px;
+            height: 370px;
+        }
+        
+        section#redes-sociais{
+            text-align: right;
+            margin-bottom: 80px;
+            margin-left: 200px;
+            
+        }
+        
+        section#redes-sociais img{
+            width: 35px;
+            margin: 10px;
+            border-radius: 50%;
+            box-shadow: 2px 2px 5px white;
+            
+        }
+        
+}
     
