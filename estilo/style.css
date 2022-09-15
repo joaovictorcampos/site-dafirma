@@ -478,8 +478,8 @@ section#consoles img{
 
 section#redesocial{
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    left: 40%;
+    transform: translate(-40%);
 }
 
 iframe#tela{
