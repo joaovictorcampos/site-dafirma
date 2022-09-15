@@ -376,12 +376,11 @@ section#rank > h1{
 
 
 table{
-   
     margin: auto;
     border-radius: 10px;
     background-color: #382d6b;
     border-collapse: collapse;
-    margin-bottom: 30px;
+    margin-top: 40px;
 }
 
 caption{
@@ -465,7 +464,7 @@ td a:hover{
     text-align: right;
 }
 
-.tabelas{
+.tabelagrande{
     overflow-x: auto;
 }
 
@@ -474,7 +473,7 @@ section#consoles img{
     margin: auto;
     padding-bottom: 40px;
     max-width: 100%;
-   width: 500px;
+    width: 500px;
 }
 
 section#redesocial{
@@ -492,9 +491,10 @@ iframe#tela{
 
 section#redes-sociais{
     text-align: right;
-    margin-left: 360px;
+    width: 50px;
     margin-bottom: 150px;
-    display: block;
+    margin-left: 90%;
+
 }
 
 section#redes-sociais img{
@@ -673,7 +673,7 @@ section#redes-sociais img:hover{
             
         }
 
-        .tabelas{
+        .tabelagrande{
             overflow-x: auto;
         }
 
@@ -693,8 +693,8 @@ section#redes-sociais img:hover{
         
         section#redes-sociais{
             text-align: right;
-            margin-bottom: 80px;
-            margin-left: 200px;
+            margin-bottom: 150px;
+            margin-left: 90%;
             
         }
         
