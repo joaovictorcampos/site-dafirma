@@ -93,6 +93,31 @@ header p{
     
 }
 
+i#menu{
+    background-color: rgba(0, 0, 0, 0.623);
+    color: var(--cor3);;
+    display: none;
+    text-align: right;
+    padding: 10px;
+    cursor: pointer;
+}
+
+i#menu:hover{
+    color: white;
+}
+
+menu{
+    display: block;
+}
+
+menu > ul{
+    list-style-type: none;
+}
+
+menu > nav > ul > li {
+    display: inline-block;
+}
+
 nav{
     margin: 0px 0px 15px 0px;
     padding: 15px 0px 15px 40px;
@@ -508,6 +533,24 @@ section#redes-sociais img{
 section#redes-sociais img:hover{
     border: 2px solid rgba(255, 255, 255, 0.692);
 }
+@media(max-width: 450px){
+    /*Seção Barras*/   
+    
+        i#menu{
+            display: block;
+        }
+    
+    /*seção menu*/
+
+        menu#itens{
+            display: none;
+        }
+
+        menu > nav > ul > li{
+            display: block;
+        }
+
+}
 
 @media(max-width: 400px){
     /*seção HEADER*/
@@ -526,7 +569,7 @@ section#redes-sociais img:hover{
         
         header{
             padding-top: 25px;
-            padding-bottom: 100px;
+            padding-bottom: 55px;
             padding-left: 50px;
             text-align: justify;
             background-image: linear-gradient(to bottom, var(--cor3), rgba(0, 0, 0, 0.623));
@@ -554,6 +597,18 @@ section#redes-sociais img:hover{
             color: white;
             text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.712);
             margin: 0px 0px 0px -15px;
+        }
+
+    /*Seção do MENU*/
+
+        menu#itens{
+            padding-bottom: 10px;
+        }
+
+        Nav{
+            margin: 0px 0px 0px 0px;
+            padding: 0px 0px 0px 0px;
+            height: 95px;
         }
     
     /*seção do DISCORD*/
